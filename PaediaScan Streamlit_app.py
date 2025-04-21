@@ -7,6 +7,8 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from PIL import Image
 
+st.set_page_config(page_title="Pneumonia Detection", layout="centered")
+
 # File setup
 MODEL_PATH = "model.h5"
 MODEL_ID = "122wvaD-tM23HNit-oQMsGRfQpuTfB1Dk"
@@ -22,7 +24,7 @@ model = load_model(MODEL_PATH)
 class_names = ['NORMAL', 'PNEUMONIA']
 
 #Streamlit page setup
-st.set_page_config(page_title="Pneumonia Detection", layout="centered")
+#st.set_page_config(page_title="Pneumonia Detection", layout="centered")
 st.title("""
          Welcome to PaediaScan
          Your AI-Powered Paediatric Pneumonia Screening
