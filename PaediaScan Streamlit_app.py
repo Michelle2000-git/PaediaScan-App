@@ -25,7 +25,7 @@ class_names = ['NORMAL', 'PNEUMONIA']
 st.set_page_config(page_title="Pneumonia Detection", layout="centered")
 st.title("""
          Welcome to PaediaScan
-         Your AI-Assisted X-ray Review for Paediatric Pneumonia
+         Your AI-Powered Paediatric Pneumonia Screening
          """
          )
 uploaded_file = st.file_uploader("Please upload a chest x-ray image...", type=["jpg", "jpeg", "png"])
